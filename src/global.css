@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'sans-serif', 'STXihei', 'serif';
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.el-card {
+  box-shadow: none !important;
+  border: none !important;
+}
+.popover-item li:hover {
+  background: #fff;
+  color: #000;
+}
+div[role='tooltip'] {
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 10px 0;
+  top: 70px !important;
+}
+.el-popper .popper__arrow,
+.el-popper .popper__arrow::after {
+  display: none !important;
+}
+.el-popover,
+.el-radio-button:first-child:last-child .el-radio-button__inner {
+  border-radius: 0 !important;
+}
+.el-popper[x-placement^=bottom] {
+  margin-top: 0 !important;
+}
+.el-carousel__item.is-animating {
+  transition: opacity 0.5s ease-in-out !important;
+}
+.slide-in {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all, 0.7s;
+}
+.align-left.slide-in {
+  transform: scale(0.95);
+}
+.align-right.slide-in {
+  transform: scale(0.95);
+}
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+@media screen and (max-width: 1204px) {
+  #nav ul {
+    position: absolute;
+    right: -2000px;
+  }
+  body #mainNav .btn-menu {
+    margin-left: 2000px;
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 10px;
+  }
+}
